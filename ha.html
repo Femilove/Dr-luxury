@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hero-img {
+            background: url(drluxury.jpg) no-repeat;
+            background-size: cover;
+            height: 150vh;
+            width: 100%;
+            position: relative; /* Added to position children absolutely within this element */
+        }
+        h1 {
+            font-size: 5em;
+            color: white;
+        }
+        p {
+            font-size: 2em;
+            color: black;
+        }
+        .hero-wrap {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+        .button {
+            position: absolute;
+            top: 80%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 1em;
+        }
+        .button button {
+            font-size: 1.5em;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button button:hover {
+            background-color: #444;
+        }
+        .hero-signin {
+            position: absolute;
+            top: 90%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 1em;
+        }
+        .hero-signin button {
+            font-size: 1.2em;
+            padding: 0.5em 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero-signin button:hover {
+            background-color: #0056b3;
+        }
+        .section2 {
+            background-color: black;
+            height: 100em;
+            width: 100%;
+            background-size: cover;
+            padding-top: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="hero-img">
+            <div class="hero-wrap">
+                <!-- <h2 class="logo">Dl</h2> -->
+                <h1>Dr LuXuRy</h1>
+                <p>We offer the clothing and luxury jewelry from t-shirts to trousers, shoes, chains</p>
+            </div>
+            <div class="button">
+                <button><a href="get.html">Get Started</a></button>
+            </div>
+            <div class="hero-signin">
+                <button ><a href="sign.html">Sign In</a></button>
+                <button><a href="login.html">Login</a></button>
+            </div>
+        </div>
+    </section>
+    <!-- </section> --> <!-- This closing section tag was misplaced and has been removed -->
+</body>
+</html>
